@@ -1,0 +1,138 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Auto Sale Process</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background: #fff; color: #333; }
+    h2, h3 { color: #5D2E8C; }
+    h5 { color: #000000; font-weight:bold;}
+    img { border: 1px solid #ccc; margin: 10px 0; }
+    center { margin: 20px 0; }
+    .section { padding: 20px 40px; }
+    .highlight { background-color: #fff8dc; border-left: 5px solid #f0ad4e; padding: 10px 20px; margin: 20px 0; }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="section" style="background:#f4f4f4;">
+    <div style="text-align: center;">
+      <h2>Auto Sale Process</h2>
+      <p>Automate your sales operations: Delivery, Invoice, and Payment — all in one click!</p>
+    </div>
+  </div>
+
+  <!-- Overview -->
+  <div class="section">
+    <div class="highlight">
+      <strong>Note:</strong> This module works only when <strong>Multi-Step Routes are disabled</strong>. Ensure that your Inventory configuration uses <strong>Single-Step Delivery</strong>.
+    </div>
+    <h3>Overview</h3>
+    <p>This module automates multiple backend operations in the sales flow. On confirming a Sales Order, it can auto-validate delivery, generate invoices, and optionally register payments, based on your settings.</p>
+  </div>
+
+  <!-- Features -->
+  <div class="section">
+    <h3>Key Features</h3>
+    <ul>
+      <li>✅ Automatically validate delivery orders</li>
+      <li>✅ Generate and post invoices automatically</li>
+      <li>✅ Register payments and mark invoices as paid</li>
+      <li>✅ Control automation independently for delivery and invoice</li>
+      <li>✅ Clean UI integrated in Sales Settings</li>
+    </ul>
+  </div>
+
+  <!-- Configuration -->
+  <div class="section">
+    <h3>Configuration</h3>
+    <p>To enable and configure the automation:</p>
+    <ul>
+      <li>Navigate to <strong>Sales → Configuration → Settings</strong></li>
+      <li>Scroll to the section <strong>Automatic Sales Process</strong></li>
+      <li>Enable <strong>Auto Validate Delivery</strong> to validate delivery orders automatically</li>
+      <li>Enable <strong>Auto Sale Invoice</strong> to automate invoice and payment actions</li>
+      <li>Select a mode under <strong>Auto Sale Invoice</strong>:
+        <ul>
+          <li>Create Invoice</li>
+          <li>Invoice and Post</li>
+          <li>Post and Register Payment</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Workflow -->
+  <div class="section">
+      <div style="text-align: center;">
+          <h3>Workflow in Action</h3>
+          <h4>1. Configuration</h4>
+          <p style="font-weight:400; font-size:16px; line-height:150%; text-align:center;  color:var(--text-color-light)">
+              Under Sales > Configuration
+              > Settings
+              enable "Auto Validate Deliver" and Choose option from
+              "Auto Sale Invoice".
+          </p>
+          <img src="1_settings.png" alt="Settings Screenshot" style="max-width:75%"/>
+      </div>
+
+      <div style="text-align: center;">
+          <h4>2. Sale Quotation</h4>
+          <p style="font-weight:400; font-size:16px; line-height:150%; text-align:center;  color:var(--text-color-light)">
+              Create a Sale Quotation and confirm it from the Sales Order.
+          </p>
+          <img src="2_quotation.png" alt="Quotation" style="max-width:75%">
+      </div>
+
+      <div style="text-align: center;">
+          <h4>3. Auto Validate Delivery</h4>
+          <p style="font-weight:400; font-size:16px; line-height:150%; text-align:center;  color:var(--text-color-light)">
+              After confirming the Sale Order, the system automatically validates the delivery.
+          </p>
+          <img src="3_delivery.png" alt="Delivery" style="max-width:75%">
+          <img src="4_delivery_done.png" alt="Delivery Done" style="max-width:75%">
+      </div>
+
+      <div style="text-align: center;">
+          <h4>4. Auto Invoice Generation</h4>
+          <p style="font-weight:400; font-size:16px; line-height:150%; text-align:center;  color:var(--text-color-light)">
+              If you choose create invoice from Auto Sale Invoice, the system will create an invoice automatically but will not confirm it.
+          </p>
+          <img src="5_create_invoice.png" alt="Create Invoice" style="max-width:75%">
+          <img src="6_invoice_created.png" alt="Invoice Created" style="max-width:75%">
+          <img src="7_invoice_created_without_confirm.png" alt="Invoice Created without confirm" style="max-width:75%">
+      </div>
+
+      <div style="text-align: center;">
+          <h4>5. Auto Invoice and Post Generation</h4>
+          <p style="font-weight:400; font-size:16px; line-height:150%; text-align:center;  color:var(--text-color-light)">
+              If you choose Invoice and Post, the system will create and confirm the invoice automatically.
+          </p>
+          <img src="8_invoice_post.png" alt="Invoice Post" style="max-width:75%">
+          <img src="9_inovice_posted.png" alt="Invoice Posted" style="max-width:75%">
+      </div>
+
+      <div style="text-align: center;">
+          <h4>6. Auto Payment Registration</h4>
+          <p style="font-weight:400; font-size:16px; line-height:150%; text-align:center;  color:var(--text-color-light)">
+              If you choose Post and Register Payment, the system will create, confirm the invoice and register the payment automatically.
+          </p>
+          <img src="10_invoice_payment.png" alt="Invoice Payment" style="max-width:75%">
+          <img src="11_invoice_paid.png" alt="Invoice Paid" style="max-width:75%">
+      </div>
+
+  </div>
+
+  <!-- Footer -->
+  <div class="section" style="background:#f4f4f4;">
+    <div style="text-align: center;">
+      <img src="images/auto_sale_logo.png" alt="Auto Sale Workflow" style="max-height: 45px;">
+      <p>© 2025 Your Company Name. All rights reserved.</p>
+    </div>
+  </div>
+
+</body>
+</html>
